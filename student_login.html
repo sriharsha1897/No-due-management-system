@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/icon.png">
+    <title>Dues Management Admin Portal</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+
+    <div align="center">
+      <h2>Welcome to Dues Management Student Portal!</h2>
+    </div>
+    <!--Signin Form-->
+    <div class="container">
+      <form class="form-signin" action="login_check.jsp" method="post">
+        <div align="center">
+          <h3 class="form-signin-heading">Please sign in</h3>
+        </div>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" name="username" class="form-control" placeholder="Username" required>
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <br>
+        <select name="login_as" class="btn btn-primary">
+          <option role="presentation" value="admin" default>Student</option>
+        </select>
+        <br><br>
+        <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Sign in</button>
+      </form>
+      <div align="center">
+        <h5><a href="index.html">Home</a></h5>
+      </div> 
+
+    </div> 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      </body>
+</html>
